@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Upstream work — changes that landed</title>
+  <desc id="desc">A midnight commit graph with colored branches merging into one verified upstream lane.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07101f"/>
+      <stop offset="0.58" stop-color="#0b1730"/>
+      <stop offset="1" stop-color="#101d38"/>
+    </linearGradient>
+    <linearGradient id="merge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="0.52" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#b8c7e8" stroke-opacity="0.05"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="28" fill="url(#grid)"/>
+  <path d="M0 262C208 222 354 308 566 266S942 220 1200 258V320H0Z" fill="#07101f" opacity="0.52"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="62" y="58" fill="#7dd3fc" font-size="16" font-weight="700" letter-spacing="3">CAGEDBIRD / PUBLIC LEDGER</text>
+    <text x="62" y="130" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="58" font-weight="800" letter-spacing="-2">UPSTREAM WORK.</text>
+    <text x="64" y="172" fill="#b9c7e5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="21" font-weight="500">Small diffs. Real constraints. Changes that landed.</text>
+
+    <g transform="translate(62 222)" font-size="13" font-weight="700" letter-spacing="1">
+      <rect width="176" height="38" rx="8" fill="#102441" stroke="#2a4d72"/>
+      <circle cx="20" cy="19" r="5" fill="#67e8f9" filter="url(#glow)"/>
+      <text x="35" y="24" fill="#dff8ff">34 LANDED CHANGES</text>
+      <g transform="translate(188 0)">
+        <rect width="152" height="38" rx="8" fill="#102441" stroke="#2a4d72"/>
+        <circle cx="20" cy="19" r="5" fill="#fbbf24" filter="url(#glow)"/>
+        <text x="35" y="24" fill="#fff2c2">8 UPSTREAM REPOS</text>
+      </g>
+      <g transform="translate(352 0)">
+        <rect width="170" height="38" rx="8" fill="#102441" stroke="#2a4d72"/>
+        <circle cx="20" cy="19" r="5" fill="#fb7185" filter="url(#glow)"/>
+        <text x="35" y="24" fill="#ffe1e8">LINKED EVIDENCE</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(735 46)" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <rect x="0" y="0" width="406" height="226" rx="20" fill="#07101f" stroke="#2a436b" stroke-width="2"/>
+    <rect x="15" y="15" width="376" height="196" rx="14" fill="#0b1427" stroke="#162d4e"/>
+
+    <path d="M54 56H132C174 56 170 112 212 112H326" stroke="#67e8f9" stroke-width="5"/>
+    <path d="M54 112H326" stroke="#fbbf24" stroke-width="5"/>
+    <path d="M54 168H132C174 168 170 112 212 112" stroke="#fb7185" stroke-width="5"/>
+    <path d="M326 112H354" stroke="url(#merge)" stroke-width="7"/>
+    <path d="M344 96L362 112L344 128" stroke="#f8fafc" stroke-width="5"/>
+
+    <g stroke="#0b1427" stroke-width="4">
+      <circle cx="54" cy="56" r="10" fill="#67e8f9" filter="url(#glow)"/>
+      <circle cx="54" cy="112" r="10" fill="#fbbf24" filter="url(#glow)"/>
+      <circle cx="54" cy="168" r="10" fill="#fb7185" filter="url(#glow)"/>
+      <circle cx="132" cy="56" r="9" fill="#67e8f9"/>
+      <circle cx="132" cy="112" r="9" fill="#fbbf24"/>
+      <circle cx="132" cy="168" r="9" fill="#fb7185"/>
+      <circle cx="212" cy="112" r="12" fill="#f8fafc" filter="url(#glow)"/>
+      <circle cx="276" cy="112" r="9" fill="#fbbf24"/>
+      <circle cx="326" cy="112" r="9" fill="#fb7185"/>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1">
+      <text x="32" y="37" fill="#7dd3fc">FIX</text>
+      <text x="27" y="96" fill="#fbbf24">TEST</text>
+      <text x="20" y="193" fill="#fb7185">REVIEW</text>
+      <text x="238" y="90" fill="#b9c7e5">MERGED</text>
+    </g>
+  </g>
+
+  <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="27.25" fill="none" stroke="#a7c7ff" stroke-opacity="0.16" stroke-width="1.5"/>
+</svg>
